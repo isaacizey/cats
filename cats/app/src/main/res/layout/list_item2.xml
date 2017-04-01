@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_cat_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.android.cats.myCat"
+    android:text="Amazing creatures"
+    >
+
+            <ImageView
+                android:id="@+id/cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cat"
+
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:text="Amazing creatures"
+            android:background="#50691a99"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:id="@+id/tx1"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tx2"
+            android:layout_below="@+id/tx1"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:text="Cats"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30691a99"/>
+
+    <TextView
+
+        android:id="@+id/tx3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Cats are the most wonderful pets ever adopted.They are clever and cunning, cute and lovely. "
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

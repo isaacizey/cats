@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:gravity="center_vertical|left"
+    android:id="@+id/cont_item_root"
+    android:onClick="myCat"
+    android:clickable="true"
+
+    android:background="@drawable/background_state_drawable"
+    android:layout_marginBottom="3dp">
+
+
+
+    <ImageView
+        android:id="@+id/in_item_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/cat"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:onClick="myCat"
+        />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_toRightOf="@+id/in_item_icon"
+    android:background="#10000000">
+    <TextView
+        android:id="@+id/lbl_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="15dp"
+        android:padding="20dp"
+        android:textSize="24dp"
+        android:text="imagine me"
+        android:elevation="10dp"
+        android:textColor="#0D47A1"
+
+
+        />
+
+    <TextView
+        android:id="@+id/lbl_item_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amazing cat"
+        android:textSize="14sp"
+        android:layout_below="@+id/lbl_item_text"
+        android:padding="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:layout_marginTop="-10dp"
+        android:textColor="#000000"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:layout_below="@+id/lbl_item_text2"
+        android:onClick="myCat"/>
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>
